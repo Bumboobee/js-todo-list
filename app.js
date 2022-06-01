@@ -35,5 +35,5 @@ app.listen(3000, () => {
  * - npm install express --save 
  * - git add .
  * - git commit -m 'Descricao'
- * - git push origin master (sobe para a branch especificada) 
+ * - git push origin master (sobe para a branch previamente) 
  */
