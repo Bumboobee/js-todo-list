@@ -25,7 +25,7 @@ app.use(log);
 /**
  * usa como um middleware 
  */
-app.use(checkListRouter);
+app.use('/checklists', checkListRouter);
 
 /**
  * caso chame esse link, isso seria mostrado
