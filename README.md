@@ -1,0 +1,3 @@
+## ToDo-list
+Small project made with the MVC struct + Js, but if you are trying to understand what this is about... 
+this is a closed projet made for study porpuses, with a linked database call **MongoDB**. 
