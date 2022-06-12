@@ -6,41 +6,41 @@
   <div class="container">
     <div class="columns">
       <div class="column is-four-fifths">
-        <h1 class="title size-4">Listas de Tarefas</h1>
+        <h1 class="title size-4 has-text-primary">Minhas Tarefas</h1>
       </div>
-      <div class="column is-one-fifth">
-        <a href="/checklists/new" class="button is-success is-small"
-          >Nova Lista</a
+      <div class="column is-one-fifths" style="text-align: right;">
+        <a href="/checklists/new" class="button is-link is-small">
+          <i class="fa fa-plus"></i>&nbsp; Nova Lista</a
         >
       </div>
     </div>    
     <div class="columns is-multiline">
       <% checklists.forEach(checklist => { %>
-      <div class="column is-one-quarter">
-        <div class="card has-background-white-ter">
+      <div class="column is-one-third">
+        <div class="card has-background-grey-lighter" style="border-radius: 5px;">
           <div class="card-content">
             <p class="subtitle is-size-5">
               <%= checklist.name %>
             </p>
-            <p class="subtitle is-size-6">
-              <%= checklist.tasks.length %> tarefas
+            <p class="tag is-link is-small">
+              <b><%= checklist.tasks.length %></b>&nbsp; tarefas
               <%= console.log(checklist.tasks.length)%>
             </p>
           </div>
           <footer class="card-footer">
             <p class="card-footer-item">
               <span>
-                <a href="/checklists/<%= checklist._id %>">Ver</a>
+                <a href="/checklists/<%= checklist._id %>"><i class="fa fa-eye"></i>&nbsp; Ver</a>
               </span>
             </p>
             <p class="card-footer-item">
               <span>
-                <a href="/checklists/<%= checklist.id %>/edit">Editar</a>
+                <a href="/checklists/<%= checklist.id %>/edit"><i class="	fas fa-edit"></i>&nbsp; Editar</a>
               </span>
             </p>
             <p class="card-footer-item">
               <span>
-                <a href="/checklists/<%= checklist.id %>?_method=delete" class="has-text-danger">Remover</a>
+                <a href="/checklists/<%= checklist.id %>?_method=delete" class="has-text-danger"><i class="fas fa-trash"></i>&nbsp; Remover</a>
               </span>
             </p>
           </footer>

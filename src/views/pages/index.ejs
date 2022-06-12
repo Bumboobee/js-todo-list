@@ -1,19 +1,42 @@
-<%- include('../layouts/header', {title: 'TODO-List'}) %>
+<%- include('../layouts/header', {title: 'Reprehendo - checklist'}) %>
 
-<%- include('../layouts/menu') %>
-
-<section class="section hero is-link is-fullheight-with-navbar">
+<section class="section hero is-fullheight-with-navbar">
     <div class="hero-body has-text-centered">
       <div class="container">
-        <h1 class="title">
-          TODO-List
+        <h1 class="title has-text-light">
+          Reprehendo
         </h1>
-        <h2 class="subtitle">
-          Geranciando nossas atividades diárias =D
+        <h2 class="subtitle has-text-light">
+          Geranciando suas atividades diárias ☀
         </h2>
-	      <a href="/checklists" class="button is-light is-medium">Ir para Listas de Atividades!</a>
+	      <a href="/checklists" class="button is-primary is-medium has-text-light">Ir para Listas de Atividades!</a>
       </div>
     </div>
 </section>
-
+<style>
+  section {
+      animation: animate 9.5s ease infinite;
+      height: 100vh;
+  }
+  @keyframes animate {
+      0% {
+          background-color: #3a2cf5;
+      }
+      25% {
+          background-color: #262730;
+      }
+      50% {
+          background-color: #390f70;
+      }
+      75% {
+          background-color: #ab4be2;
+      }
+      85% {
+          background-color: #236490;
+      }
+      100% {
+          background-color: #2d54d3;
+      }
+  }
+</style>  
 <%- include('../layouts/footer') %>

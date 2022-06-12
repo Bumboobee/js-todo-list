@@ -7,15 +7,19 @@ const setTagAsDone = async (element, id) => {
         let data = await response.json();
         let task = data.task;
         let parent = element.parentNode;
+        
 
         if (task.done) {
             element.checked = true;
-            parent.classList.add('has-text-success');
+            parent.classList.add('has-text-dark');
             parent.classList.add('is-italic');
+            parent.classList.add('strikethrough-text');
+
         } else {
             element.checked = false;
-            parent.classList.remove('has-text-success');
+            parent.classList.remove('has-text-dark');
             parent.classList.remove('is-italic');
+            parent.classList.remove('strikethrough-text');
         }
     } catch (error) {
         alert('Erro ao atualizar a tarefa!');

@@ -1,4 +1,4 @@
-<%- include('../layouts/header', {title: 'checklist.name'}) %>
+<%- include('../layouts/header', { title: checklist.name }) %>
 
 <%- include('../layouts/menu') %>
 
@@ -8,9 +8,9 @@
         <div class="column">
           <h1 class="title size-4"><%= checklist.name %></h1>
         </div>
-        <div class="column is-one-fifth">
-          <a href="/checklists/<%= checklist._id %>/tasks/new" class="button is-success is-small">Nova Tarefa</a>
-          <a href="/checklists" class="button is-small">Voltar</a>
+        <div class="column is-one-fifth" style="text-align: right;">
+          <a href="/checklists" class="button is-dark is-small"><i class="fa fa-arrow-left"></i>&nbsp; Voltar</a>
+          <a href="/checklists/<%= checklist._id %>/tasks/new" class="button is-link is-small"><i class="fa fa-plus"></i>&nbsp; Nova Tarefa</a>
         </div>
       </div>
 
@@ -18,20 +18,27 @@
 
       <% checklist.tasks.forEach(task => { %>
         <div class="columns">
-            <div class="column is-four-fifths <%= task.done ? 'has-text-success is-italic' : '' %>">
-              <input
+            <div id="checklist-task" class="column is-four-fifths <%= task.done ? 'has-text-dark is-italic strikethrough-text' : '' %>">
+              <input style="cursor: pointer;"
                 type="checkbox"
                 onchange="setTagAsDone(this, '<%= task._id %>')"
                 <%= task.done ? 'checked' : '' %>
               />
-              <%= task.name %>
+              <b><%= task.name %></b> <span id="done" class="tag is-link is-small" style="display: none;">done</span>
             </div>
-            <div class="column is-one-fifth">
-              <a href="/tasks/<%= task._id %>?_method=delete" class="button is-danger is-small">Remover</a>
+            <div class="column is-one-fifth" style="text-align: right;">
+              <a href="/tasks/<%= task._id %>?_method=delete" class="button is-danger is-small"><i class="fas fa-trash"></i>&nbsp; Remover</a>
             </div>
         </div>
       <% }) %>
   </div>
 </section>
+
+<style>
+  .strikethrough-text {
+    text-decoration: line-through;
+    text-decoration-color: #0011ff;
+  }
+</style>
 
 <%- include('../layouts/footer') %>
