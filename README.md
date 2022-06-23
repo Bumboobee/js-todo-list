@@ -1,3 +1,24 @@
-## ToDo-list
-Small project made with the MVC struct + Js, but if you are trying to understand what this is about... 
-this is a closed projet made for study porpuses, with a linked database call **MongoDB**. 
+## Todo list | Node.js
+
+In this project, you can have all your **daily tasks** in just one place! *cool ham?* 
+First you have your main task list, and then, inside of it... **boom**, all of your tasks is there! 
+
+## About Ⓜ
+
+Made for study, **[this application](https://gentle-savannah-17620.herokuapp.com/)** was specially created with a database call **[Mongo](https://www.mongodb.com/pt-br)**, with a server-side processing request (GET, PUT, DELETE, POST).
+
+Also using **[node.js](https://nodejs.org/en/)** with **[.ejs express](https://expressjs.com/pt-br/)** as a framework for it.
+It was created as the finalization of the module of the Treinanemto Full stack Js course, as a closing of the module.
+
+## Take a look 
+
+ **The final result you can see [➡here⬅](https://gentle-savannah-17620.herokuapp.com/)**
+ 
+<div align="center">
+ 
+![892a14ed571fcdc40a526b7faff729d93615fb0a](https://user-images.githubusercontent.com/94147847/173355456-c3a781fd-fbd3-47c9-a650-763675c355a5.gif)
+
+
+ > In the end we discover that to love and let go can be the same thing.
+ >> **Jack Kornfield**
+<div \> 
