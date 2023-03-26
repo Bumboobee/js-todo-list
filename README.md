@@ -5,14 +5,14 @@ First you have your main task list, and then, inside of it... **boom**, all of y
 
 ## About Ⓜ
 
-Made for study, **[this application](https://gentle-savannah-17620.herokuapp.com/)** was specially created with a database call **[Mongo](https://www.mongodb.com/pt-br)**, with a server-side processing request (GET, PUT, DELETE, POST).
+Made for study, **[this application]()** was specially created with a database call **[Mongo](https://www.mongodb.com/pt-br)**, with a server-side processing request (GET, PUT, DELETE, POST).
 
 Also using **[node.js](https://nodejs.org/en/)** with **[.ejs express](https://expressjs.com/pt-br/)** as a framework for it.
 It was created as the finalization of the module of the Treinanemto Full stack Js course, as a closing of the module.
 
 ## Take a look 
 
- **The final result you can see [➡here⬅](https://gentle-savannah-17620.herokuapp.com/)**
+ **The final result you can see [➡here⬅]()**
  
 <div align="center">
  
